@@ -1,0 +1,18 @@
+pip install virtualenv
+
+virtualenv --python=python3.10.4 myenv
+# activate virtual environment:
+    mac: source myenv/bin/activate
+    windows: myenv\Scripts\activate
+
+#install flask:    
+    pip install flask
+
+#create db schema
+mac: vi schema.sql
+windows: vim schema.sql
+
+#create database
+sqlite3 database.db < schema.sql
+
+
