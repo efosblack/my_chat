@@ -15,4 +15,7 @@ windows: vim schema.sql
 #create database
 sqlite3 database.db < schema.sql
 
+#install flask for server
+pip install flask
+pip install flask_cors
 
